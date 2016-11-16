@@ -1,0 +1,24 @@
+#include "sendwindow.h"
+#include "ui_sendwindow.h"
+
+SendWindow::SendWindow(QWidget *parent) :
+    QDialog(parent),
+    ui(new Ui::SendWindow)
+{
+    ui->setupUi(this);
+}
+
+SendWindow::~SendWindow()
+{
+    delete ui;
+}
+
+void SendWindow::on_pushButton_2_clicked()
+{
+    this->close();
+}
+
+void SendWindow::on_pushButton_clicked()
+{
+    this->close();
+}
